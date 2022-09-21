@@ -22,7 +22,7 @@ done
 
 # pre-conditions
 if [ "$env" == "null" ]; then
-  echo "bad input: --env required"
+  echo "bad input: --env required, [local, test]"
   exit 1
 fi
 
@@ -42,7 +42,9 @@ rm -r -f -v ./dist/
 mkdir -v ./dist/
 
 bash $BACKEND_SCRIPT_BUILDER --env $env --dist_directory $DISTRIBUTION_DIR_PATH --exe_filename server_app.exe
+cd $SCRIPT_PATH
 
+cd "$SCRIPT_PATH/../svelte/"
 bash $FRONTEND_SCRIPT_BUILDER --output_dir $DISTRIBUTION_DIR_PATH
 cd $SCRIPT_PATH
 

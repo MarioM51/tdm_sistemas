@@ -2,7 +2,7 @@
 set -e
 #SCRIPT_PATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-TAG="0.0.3"
+TAG="0.0.4"
 IMAGE_NAME="mario51/carro_de_madera"
 DOCKER_FILE="server_publish.dockerfile"
 NAME_CONTAINER="carro_de_madera_web_server"
