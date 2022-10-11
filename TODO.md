@@ -1,40 +1,42 @@
 # Todo
 
-- requeriments
-  - avoid load old javascript scripts when these are updated.
-  - send an email to the persons with the rol od order when the order is made, and one email to the client when its accepted .
-  - show feedback message when the user info is updated.
-  - admin comments
-  - create a way to comunicate in case the can't send an email or do a phone call
-  - upload source to git repository
+- requeriment
   - validate inputs in api side
   - add https
-  - add comments admin
-  - strategy for backup and restore the database using dist folder
   - add key words to blog
   - .
   - .
   - .
   - _____________ In progres
-    - .
+    - upload source to git repository
+    - send an email to the persons with the rol of order when the order is made, and one email to the client when its accepted .
     - .
     - .
   - _____________ Finished _____________
-    - home page
+    - add response to comments and option to delete them to products
+    - add response to comments and option to delete them to blogs
     - link to admin
-    - .
-    - .
-    - .
+    - avoid load old javascript scripts when these are updated.
+    - show feedback message when the user info is updated.
+    - strategy for backup and restore the database using dist folder
+    - home page
+    - Add contact info (street, map, phone number with whatsapp, email, )
+
+..............................................................................
+..............................................................................
+..............................................................................
 
 - frontend
-  - When is select the same image that was just deleted, not do anything
-  - add a delete and update request for every item in the collection of UIHelper, because
-    currently i use only one, and when I delete one of them, all the delete buttons of all
-    items show the deleting animation, making it seem (it doesn't really happend) that
-    all the items are going to be deleted.
   - See the way to use only a model by comments, on products, blogs and the UI-comments,
     because I have two models BlogComment and UI-Comment, that causes that I have to
     convert between these which is pretty dirty
+  - _____________ PENDENT _____________
+    - When is select the same image that was just deleted, not do anything
+    - .
+
+..............................................................................
+..............................................................................
+..............................................................................
 
 - backend
   - Hay algo **raro** al colsultar todos los productos, al parecer la libreria GORM regresa

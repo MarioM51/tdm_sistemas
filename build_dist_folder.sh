@@ -26,6 +26,12 @@ if [ "$env" == "null" ]; then
   exit 1
 fi
 
+#repited in build_backend_script.sh
+if ! [[ $env == "test" || $env == "local" ]]; then
+  echo "--env: must be test or local, but it was $env"
+  exit 1
+fi
+
 
 # show variables
 echo "=== VARIABLES ==="
@@ -41,6 +47,7 @@ echo "CLEANING DIST DIRECTORY ..."
 rm -r -f -v ./dist/
 mkdir -v ./dist/
 
+cd "$SCRIPT_PATH/../api/"
 bash $BACKEND_SCRIPT_BUILDER --env $env --dist_directory $DISTRIBUTION_DIR_PATH --exe_filename server_app.exe
 cd $SCRIPT_PATH
 
